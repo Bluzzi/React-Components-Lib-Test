@@ -10,10 +10,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions"
   ],
-  "framework": {
-    "name": "@storybook/react-vite",
-    "options": {}
-  },
+  "framework": "@storybook/react-vite",
   "docs": {
     "docsPage": true
   }
