@@ -25,3 +25,9 @@ dist-ssr
 
 # Lock file
 package-lock.json
+
+# NPM files
+.npmrc
+
+# Build style
+style.css
