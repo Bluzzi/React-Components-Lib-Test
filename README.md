@@ -1,10 +1,10 @@
 # React Components Library Example
 An example of a React component library structure with TypeScript, Vite, Tailwind, Vitest, Testing Library and Storybook.
 
-## Installation
+## Installation (/!\ example /!\\)
 Install the package:
 ```
-npm install @essential-tooth-box/design-system
+npm install react-components-lib-example
 ```
 
 In your Tailwind configuration, import the design system configuration as a preset and into the content source:
@@ -12,23 +12,19 @@ In your Tailwind configuration, import the design system configuration as a pres
 /** @type {import("tailwindcss"_).Config} */
 module.exports = {
   presets: [
-    require("@essential-tooth-box/design-system/tailwind.config.cjs")
+    require("react-components-lib-example/tailwind.config.cjs")
   ],
   content: [
-    "./node_modules/@essential-tooth-box/design-system/dist/**/*.{js,ts}",
+    "./node_modules/react-components-lib-example/dist/**/*.{js,ts}",
     // ...
   ]
   // ...
 };
 ```
 
-## Package content 
-- Components of our design system
-- `Icon` component to use [FontAwesome](https://fontawesome.com)
-- React utility hooks
-
 ## Component structure
 - `element.tsx`: component (React, Tailwind)
 - `element.test.tsx`: tests (Vitest, Testing Library)
 - `element.story.tsx`: story definitions (Storybook)
 - `element.type.ts`: types (TypeScript)
+- `index.ts`: barrel export
